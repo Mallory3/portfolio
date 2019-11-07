@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Submit</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/thankyou.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <header>
+    <a href="/" id="logo"><img id="logo" src="img/logo.svg" alt="gem logo"></a>
+    <nav>
+      <a href="#" id="menu-icon"><img id="menu-icon" src="img/hamburger.svg" alt="mobile menu"></a>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="gallery">Gallery</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+  <div id="submitimg">  
+    <h3>Thankyou <%= data.name %>!</h3><br>
+    <h5>We will be in contact with you at <%= data.email %>  soon!</h5><br>
+    <a class= "return" id="codelink2" href="/">Return to Home</a>
+  </div>
+
+</main>
+<%- include partials/footer %>
+

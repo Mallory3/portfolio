@@ -1,0 +1,20 @@
+<%- include partials/header %>
+  <div id="quote">
+    <h2>Something wonderful is about to happen...</h2>
+  </div>
+  <main>
+    <form action="/submit" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Join Our Mailing List</legend>
+        <label>Name:<span>*</span><br>
+        <input id="name" type="text" name="name" placeholder="John Shepp"></label><br>
+        <label>Email<span>*</span><br>
+        <input type="email" name="email" placeholder="johnshepp@email.com" required></label><br>
+        <label>Phone Number<br>
+        <input type="tel" id="phone" name="phone"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="403-818-4164"></label><br>
+        <input id="submit" type="submit" value="Register">
+      </fieldset>
+    </form>
+  </main>  
+  <%- include partials/footer %>

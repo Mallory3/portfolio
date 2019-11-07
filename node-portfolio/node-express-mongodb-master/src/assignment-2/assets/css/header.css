@@ -1,0 +1,126 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+HEADER
+- - - - - - - - - - - - - - - - - - - - - - - - */
+header {
+  height: 80px;
+  background:black;
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+header .logo {
+  height: 40px;
+  width: 40px;
+  margin: 1em;
+}
+
+header .menu {
+  height: 40px;
+  width: 40px;
+  display: none;
+  margin: 1em;
+  
+}
+
+header .close {
+  height: 30px;
+  width: 30px;
+  background-size: 30px;
+  display: none;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 400px;
+  justify-content: space-evenly;
+}
+
+header li {
+  color: white;
+  list-style: none;
+  margin: 0;
+ 
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+ 
+}
+
+#title {
+  color:white;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media(max-width: 750px) {
+  header ul {
+      position: fixed; 
+      top: 0;
+      bottom: 0;
+      right: -320px;
+      width: 250px;
+      height: 28vh;
+      border-bottom-left-radius: 10px;
+      background:#685166;
+      transition: transform 0.2s; 
+      transform: translateX(0px); 
+  }
+
+  header .menu {
+      display: block;
+  }
+
+  header .close {
+      display:block;
+      position: fixed;
+      top: 1em;
+      bottom: 0;
+      right: 2em;
+  }
+ 
+  .openState {
+      transform: translateX(-300px); 
+      transition: transform 0.2s; 
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: left;
+      justify-content: start; 
+      padding-top: 2em;
+      padding-left: 2em;
+      z-index: 1;
+  }
+
+  header li {
+      color: white;
+      text-decoration: none;
+      padding: .5em;
+  }
+
+  .closedState {
+      transform: translateX(0px);
+      transition: transform 0.2s; 
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: left;
+      justify-content: start; 
+      padding-top: 2em;
+      padding-left: 2em;    
+  }
+}
