@@ -5,14 +5,12 @@
   <main>
     <form action="/submit" method="post" autocomplete="on">
       <fieldset>
-        <legend>Join Our Mailing List</legend>
+        <legend>Join Our Newsletter Subscription</legend>
         <label>Name:<span>*</span><br>
         <input id="name" type="text" name="name" placeholder="John Shepp"></label><br>
         <label>Email<span>*</span><br>
         <input type="email" name="email" placeholder="johnshepp@email.com" required></label><br>
-        <label>Phone Number<br>
-        <input type="tel" id="phone" name="phone"
-      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="403-818-4164"></label><br>
+        <input type="checkbox" name="adult" value="adult"> I am over 18
         <input id="submit" type="submit" value="Register">
       </fieldset>
     </form>
